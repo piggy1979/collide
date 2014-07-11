@@ -42,7 +42,7 @@ $("#searchform input").on('blur', function(){
        <span></span><span></span><span></span>
 
       </div>
-      <h1><a href="<?php echo site_url(); ?>">Halifax Pop Explosion</a></h1>
+      <h1><a href="<?php echo site_url(); ?>">Collide Halifax</a></h1>
 
     </div>
 
@@ -68,9 +68,10 @@ $("#searchform input").on('blur', function(){
 <header class="banner" role="banner">
     <div class="col-lg-12 sites">   
       <ul>
-        <li><a href="http://collidehalifax.com">Collide</a></li>
-        <li><a class="active" href="http://halifaxpopexplosion.com">Pop Explosion</a></li>
-        <li><span class="date">October 23-25, 2014 <em>&bull; Halifax, NS</em></span></li>
+        <li><a href="http://halifaxpopexplosion.com">Pop Explosion</a></li>
+        <li><a class="active" href="http://collidehalifax.com">Collide</a></li>
+        
+        <li><span class="date">October 22-24, 2014 <em>&bull; Halifax, NS</em></span></li>
         <li class="shopcart"><?php echo shoppingCart(); ?></li>
         <li class="searchbtn"><a href="/search">Search</a></li>
       </ul>

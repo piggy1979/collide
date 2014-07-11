@@ -12,7 +12,7 @@ header.banner {
 header#mainnav{
 	background-color: $linkaltcolor;
 	@include background-image(linear-gradient($linkaltcolor, $linkcolor));
-	padding:3.25em 0;
+	padding:2.25em 0;
 	background-size: cover;
 	width:100%;
 	z-index:200;
@@ -33,8 +33,8 @@ header#mainnav{
 header#mainnav img{
 	display:block;
 	float: left;
-	width:150px;
-	height:150px;
+	width:175px;
+	height:180px;
 }
 .sites{
 	width:100%;

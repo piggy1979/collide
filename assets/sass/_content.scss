@@ -424,7 +424,7 @@ a.maps{
 #date-filter{
 	margin-top:50px;
 	overflow:hidden;
-	border-bottom: 15px solid #ee5371;
+	border-bottom: 15px solid #2b8fc9;
 	@include transition-duration(1s);
 	@include transition-property(border-color);
 }
@@ -466,17 +466,17 @@ a.maps{
 }
 
 
-span.fdate21{background-color:#ee5371;}
-span.fdate22{background-color:#f66a69;}
-span.fdate23{background-color:#f88752;}
-span.fdate24{background-color:#fba542;}
-span.fdate25{background-color:#ffcc33;}
+span.fdate21{background-color:#2b8fc9;}
+span.fdate22{background-color:#25a7b3;}
+span.fdate23{background-color:#32b995;}
+span.fdate24{background-color:#34ca74;}
+span.fdate25{background-color:#2ddb77;}
 
-#date-filter.fdate21{border-color:#ee5371;}
-#date-filter.fdate22{border-color:#f66a69;}
-#date-filter.fdate23{border-color:#f88752;}
-#date-filter.fdate24{border-color:#fba542;}
-#date-filter.fdate25{border-color:#ffcc33;}
+#date-filter.fdate21{border-color:#2b8fc9;}
+#date-filter.fdate22{border-color:#25a7b3;}
+#date-filter.fdate23{border-color:#32b995;}
+#date-filter.fdate24{border-color:#34ca74;}
+#date-filter.fdate25{border-color:#2ddb77;}
 #filters{position:relative;}
 
 #extendall, #collapseall{

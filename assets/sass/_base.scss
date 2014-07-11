@@ -11,8 +11,8 @@
 
 $bodyfont: 'Open Sans', sans-serif;
 $bodycolor: #333;
-$linkcolor: #f05a8a;
-$linkaltcolor:#f7a045;
+$linkcolor: #2ccefc;
+$linkaltcolor:#2ddb77;
 $fadecolor: #999;
 $darkbuttonhover: #292929;
 $bright: #fff;
@@ -137,7 +137,7 @@ header .btn.buy{
 }
 
 .btn:hover, .button:hover{
-	background-color: #f7a045;
+	background-color: $linkaltcolor;
 }
 a.bko{
 	width:145px;

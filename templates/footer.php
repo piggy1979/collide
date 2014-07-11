@@ -55,9 +55,10 @@ $emailform->creategetresponseMiniForm();
     <section id="copyright">
     <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
     <ul>
-		<li><a href="http://halifaxpopexplosion.com">Halifax Pop Explosion</a></li>
+    	<li><a href="http://collidehalifax.com">Collide</a></li>
 		<li class="hide">/</li>
-		<li><a href="http://collidehalifax.com">Collide</a></li>
+		<li><a href="http://halifaxpopexplosion.com">Halifax Pop Explosion</a></li>
+
     </ul>
 	</section>
   </div>
