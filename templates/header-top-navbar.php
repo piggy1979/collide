@@ -20,6 +20,11 @@ $(function(){
 });
 </script>
 
+
+
+
+
+
 <?php if(wpmd_is_device()) : ?>
 <script type="text/javascript">
 $(function(){
@@ -57,7 +62,7 @@ $("#searchform input").on('blur', function(){
         endif;
       ?>
     </nav>
-    <a href="#" class='mobile buy btn'>Buy Tickets</a>
+    <a href="/tickets" class='mobile buy btn'>Buy Tickets</a>
 
 </header>
 <div id="mobilecontainer">
@@ -116,7 +121,7 @@ if( is_search() || is_404() ){
       ?>
     </nav>
 
-    <a href="#" class='buy btn'>Buy Tickets</a>
+    <a href="/tickets" class='buy btn'>Buy Tickets</a>
 
     </div>
 </header>

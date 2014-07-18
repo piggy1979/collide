@@ -237,7 +237,7 @@ function featuredSlides($n){
 
 function fetchLineup(){
 	$args = array(
-		'post_type'			=> 'marcato_artist',
+		'post_type'			=> 'marcato_contact',
 		'posts_per_page'	=> -1,
 		'orderby'			=> 'title',
 		'order'				=> 'ASC'
@@ -250,7 +250,7 @@ function fetchLineup(){
 	foreach($query->posts as $key=>$post){
 
 		// get categories for current page.
-		$cats = get_the_terms($post->ID, 'artist_tag');
+		$cats = get_the_terms($post->ID, 'post_tag');
 		$classlist = "";
 		if($cats){
 			foreach($cats as $cat){

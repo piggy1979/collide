@@ -10,7 +10,7 @@ Display the music lineup.
 	<ul id="lineup-filter">
 		<li>Showing:</li>
 		<li><span class="btn filter active" data-filter="all">All</span></li>
-		<li><span class="btn filter" data-filter=".music">Music</span></li>
+		<li><span class="btn filter" data-filter=".design">Design</span></li>
 		<li><span class="btn filter" data-filter=".comedy">Comedy</span></li>
 		<li><span class="btn filter" data-filter=".film">Film</span></li>
 		<li><span class="btn filter" data-filter=".talks">Pop!Talks</span></li>

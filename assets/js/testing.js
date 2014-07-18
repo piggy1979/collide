@@ -174,9 +174,6 @@ var buttonFilter = {
       }else{
 		$button.parent('li').parent('ul').find('.filter').removeClass('active');
 		$button.addClass('active');
-
-		
-
       }
       self.parseFilters();
     });
@@ -292,9 +289,6 @@ function setupSchedule(){
 function searchBtn(){
 	$btn = $("li.searchbtn a");
 	$form = $("#searchform");
-
-
-
 	$btn.add($form).on('click touchstart',function(evt){
 		evt.stopPropagation();
 	});
@@ -397,6 +391,7 @@ function init(){
 
 $(function(){
 
+	console.log("testing");
 	init();
 	
 	$(".flexslider").flexslider({

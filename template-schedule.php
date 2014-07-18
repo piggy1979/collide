@@ -16,11 +16,11 @@ Template Name: Schedule Template
 
 	<ul id="date-filter">
 		<li><span class="month">October</span></li>
-		<li><span class="fdate21 filter active" data-filter=".date21"><strong>21</strong></span></li>
-		<li><span class="fdate22 filter" data-filter=".date22"><strong>22</strong></span></li>
+	<!--	<li><span class="fdate21 filter active" data-filter=".date21"><strong>21</strong></span></li> -->
+		<li><span class="fdate22 filter active" data-filter=".date22"><strong>22</strong></span></li>
 		<li><span class="fdate23 filter" data-filter=".date23"><strong>23</strong></span></li>
 		<li><span class="fdate24 filter" data-filter=".date24"><strong>24</strong></span></li>
-		<li><span class="fdate25 filter" data-filter=".date25"><strong>25</strong></span></li>
+	<!-- <li><span class="fdate25 filter" data-filter=".date25"><strong>25</strong></span></li> -->
 	</ul>
 
 		<div class='pdf'><a href="/img/schedule.pdf">PDF Download / Full Schdule</a></div>

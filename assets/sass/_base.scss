@@ -212,6 +212,9 @@ span.tag{
 		color:#fff;
 	}
 }
+.main strong{
+	font-weight:600;
+}
 .main .search-form{
 	margin-top:20px;	
 }
@@ -221,4 +224,8 @@ span.tag{
 }
 .main .search-form label{
 	display:none;
+}
+.page-header h1{
+	margin-left:0;
+	margin-bottom:1em;
 }

@@ -3,9 +3,9 @@
     
     <?php
 
-    $website    = get_post_meta($post->ID, "marcato_artist_website_0_url");
-    $homebase   = get_post_meta($post->ID, "marcato_artist_homebase");
-    $artistID   = get_post_meta($post->ID, "marcato_artist_id");
+    $website    = get_post_meta($post->ID, "marcato_contact_website_0_url");
+    $homebase   = get_post_meta($post->ID, "marcato_contact_homebase");
+    $artisttID   = get_post_meta($post->ID, "marcato_contact_id");
 
 
     $twitterhandle    = getMarWebsite($post->ID,"twitter.com");
@@ -49,7 +49,7 @@
    
       <?php 
       //BIO
-      echo "<p>" . get_post_meta($post->ID, 'marcato_artist_bio_public', true) . "</p>"; 
+      echo "<p>" . get_post_meta($post->ID, 'marcato_contact_bio_public', true) . "</p>"; 
 
       //WEBSITES TO VIEW MUSIC
       if($youtubehandle){
