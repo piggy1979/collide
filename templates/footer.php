@@ -36,13 +36,13 @@ $emailform->creategetresponseMiniForm();
 
 <div id="sponsorbar">
 	<div class="wrap container">
-		<div class="col-sm-offset-2 col-sm-8">
+		<div class="col-sm-12">
 			<ul>
-				<li><img src="/img/sponsor-1.jpg"></li>
-				<li><img src="/img/sponsor-1.jpg"></li>
-				<li><img src="/img/sponsor-1.jpg"></li>
-				<li><img src="/img/sponsor-1.jpg"></li>
-				<li><img src="/img/sponsor-1.jpg"></li>
+				<li><img style="width: 105px;" src="/img/live105.png" ></li>
+				<li><img style="width: 83px;"  src="/img/lixar.png" ></li>
+				<li><img style="width: 144px;" src="/img/molson.png" ></li>
+				<li><img style="width: 113px;" src="/img/impact.png" ></li>
+				<li><img style="width: 132px;" src="/img/thecoast.png" ></li>
 			</ul>
 		</div>
 	</div>

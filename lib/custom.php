@@ -222,9 +222,9 @@ function featuredSlides($n){
 		$background = " style='background-image: url(".$image[0].")' ";
 		$output .= "<div class='slide' ".$background.">\n";
 		$output .= "<div class='slidecontent'><div class='addpadding'>\n";
-		$output .= "<h2>".$post->post_title."</h2>\n";
+		$output .= "<h2>".get_post_meta($post->ID, 'link_title')[0]."</h2>\n";
 		if(get_post_meta($post->ID, 'url')[0] && get_post_meta($post->ID, 'link_title')[0] ){
-		$output .= "<a href='". get_post_meta($post->ID, 'url')[0] ."' class='btn bko'>". get_post_meta($post->ID, 'link_title')[0] ."</a>\n";
+		$output .= "<a href='". get_post_meta($post->ID, 'url')[0] ."' class='btn bko'>Profile</a>\n";
 		}
 		$output .= "</div></div>\n";
 		$output .= "</div>\n";
@@ -237,7 +237,7 @@ function featuredSlides($n){
 
 function fetchLineup(){
 	$args = array(
-		'post_type'			=> 'marcato_contact',
+		'post_type'			=> 'marcato_artist',
 		'posts_per_page'	=> -1,
 		'orderby'			=> 'title',
 		'order'				=> 'ASC'
@@ -250,7 +250,7 @@ function fetchLineup(){
 	foreach($query->posts as $key=>$post){
 
 		// get categories for current page.
-		$cats = get_the_terms($post->ID, 'post_tag');
+		$cats = get_the_terms($post->ID, 'artist_tag');
 		$classlist = "";
 		if($cats){
 			foreach($cats as $cat){
@@ -414,7 +414,6 @@ function currentTax($id){
 	foreach($term_id as $genre){
 		$terms[] = $genre->term_id;
 	}
-
 	return $terms;
 }
 
@@ -455,7 +454,7 @@ function siteLoop($id, $n = null){
 		if($n){
 			$site_url = URLinArray($result[0], $n);
 			if($site_url){
-				echo "<p class=\"artistlink\">" . $sitename[0] . ": <a href=\"".$site_url."\" target=\"_blank\">".$site_url."</a></p>\n";
+				echo "<p class=\"artistlink\"><a href=\"".$site_url."\" target=\"_blank\">".$site_url."</a></p>\n";
 				//$output .= "<p class=\"artistlink\">" . $sitename[0] . ": <a href=\"".$site_url."\" target=\"_blank\">".$site_url."</a></p>\n";
 			}
 		}

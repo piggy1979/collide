@@ -11,8 +11,8 @@ Display the music lineup.
 		<li>Showing:</li>
 		<li><span class="btn filter active" data-filter="all">All</span></li>
 		<li><span class="btn filter" data-filter=".design">Design</span></li>
-		<li><span class="btn filter" data-filter=".comedy">Comedy</span></li>
-		<li><span class="btn filter" data-filter=".film">Film</span></li>
+		<li><span class="btn filter" data-filter=".development">Development</span></li>
+		<li><span class="btn filter" data-filter=".web">Web</span></li>
 		<li><span class="btn filter" data-filter=".talks">Pop!Talks</span></li>
 		<li><span class="btn filter" data-filter=".expo">Pop!Expo</span></li>
 	</ul>

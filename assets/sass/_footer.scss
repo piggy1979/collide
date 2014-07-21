@@ -65,15 +65,22 @@
 	}
 }
 #sponsorbar{
+
 	background-color:#000;
 	padding: 60px 0;
 	li{
-		width:20%;
-		float:left;
+		display:inline-block;
+		vertical-align:middle;
+		width:19%;
+		text-align:center;
 		img{
-			width:100%;
-			display:block;
+			display:inline;
+			max-width:100%;
 		}
+
+	}
+	ul{
+		width:100%;
 	}
 }
 footer{
