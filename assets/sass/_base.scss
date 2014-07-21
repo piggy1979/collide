@@ -11,8 +11,8 @@
 
 $bodyfont: 'Open Sans', sans-serif;
 $bodycolor: #333;
-$linkcolor: #2ccefc;
-$linkaltcolor:#2ddb77;
+$linkcolor: #76c848;
+$linkaltcolor:#0487b3;
 $fadecolor: #999;
 $darkbuttonhover: #292929;
 $bright: #fff;
@@ -74,11 +74,11 @@ a{
 	text-decoration:none;
 }
 a:hover, a:focus{
-	color: $linkaltcolor;
+	color: $linkcolor;
 	text-decoration: none;
 }
 article a, section a{
-	color: $linkcolor;
+	color: $linkaltcolor;
 }
 h5{
 	color:#999;
@@ -91,7 +91,7 @@ a.btn , input.button, a.back, .main .search-submit{
 	font-family: $bodyfont;
 	font-size:1.4rem;
 	color:#fff;
-	background-color: $linkcolor;
+	background-color: $linkaltcolor;
 	display:inline-block;
 	font-weight:400;
 	padding:10px 15px;
@@ -109,6 +109,9 @@ a.back{
 	position:absolute;
 	left:19px;
 	top:0;
+	&:hover{
+		background-color:$linkaltcolor;
+	}
 }
 .wrap{
 	overflow:hidden;
@@ -137,7 +140,7 @@ header .btn.buy{
 }
 
 .btn:hover, .button:hover{
-	background-color: $linkaltcolor;
+	background-color: $linkcolor;
 }
 a.bko{
 	width:145px;
@@ -187,7 +190,7 @@ a.profile{
 }
 span.tag{
 	@include font-size(2);
-	font-family: $confont;
+	font-family:$confont;
 	font-style:oblique;
 	color:#fff;
 	background-color:$linkaltcolor;
@@ -228,4 +231,14 @@ span.tag{
 .page-header h1{
 	margin-left:0;
 	margin-bottom:1em;
+}
+blockquote{
+	border-left:5px solid #efefef;
+	color:#aaa;
+	padding:20px;
+	margin-bottom:1em;
+	p{
+		@include font-size(2);
+		line-height:32px;
+	}
 }

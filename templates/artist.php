@@ -6,6 +6,8 @@
     $website    = get_post_meta($post->ID, "marcato_artist_website_0_url");
     $homebase   = get_post_meta($post->ID, "marcato_artist_homebase");
     $artistID   = get_post_meta($post->ID, "marcato_artist_id");
+    $jobtitle   = get_post_meta($post->ID, "job_title");
+    $company   = get_post_meta($post->ID, "company");
 
 
     $twitterhandle    = getMarWebsite($post->ID,"twitter.com");
@@ -31,7 +33,6 @@
 
       <?php 
       if(isset($homebase[0]) || $twitterhandle){
-          
           echo "<h5>\n";
           if($twitterhandle){
           echo "<a href='".$twitterhandle."' target='_blank'>".$twittername."</a>\n";
@@ -40,9 +41,22 @@
           if($homebase[0]){
           echo $homebase[0];
           }
+//          echo $jobtitle[0];
+
+          if($jobtitle[0]) echo " &bull; ";
+          if($jobtitle[0]){
+          echo $jobtitle[0];
+          }
+
+
+          if($company[0] && $jobtitle) echo ", ";
+          if($company[0]){
+          echo ' &bull; ' . $company[0];
+          }
+
+
           echo "</h5>\n";
       }
-
       ?>
     </header>
 
@@ -94,7 +108,7 @@
 
         <!-- similar artists -->
         <div class="col-sm-7">
-          <h2>Similar Artists</h2>
+          <h2>Similar Speakers</h2>
           <?php
             echo getSimilar($post->ID);
           ?>
